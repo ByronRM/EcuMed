@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="EcuMed.agendarCita">
+    <ContentPage.Content>
+        <StackLayout >
+        <StackLayout>
+            <Label Text="Agendamiento de citas"
+                   HorizontalOptions="Center"/>
+            <StackLayout Orientation="Horizontal">
+           
+        <Label x:Name="lblUsuarioc"/>
+       
+            </StackLayout>
+            
+        <Frame  CornerRadius="70">
+             <StackLayout BackgroundColor="Beige"   >
+                  <Label Text="En esta ocacion la cita sera asignada para:"/>
+
+                      <StackLayout Orientation="Horizontal"
+                                   HorizontalOptions="Start">
+                           
+                           <Label x:Name="lblUsuario"></Label>
+                      </StackLayout>
+
+                      <StackLayout Orientation="Horizontal"
+                                   HorizontalOptions="Start">
+                           <Label Text="Cédula:"/>
+                           <Label x:Name="lblCedula" Text="1722801345"/>
+                      </StackLayout >
+
+                      <StackLayout Orientation="Horizontal"
+                                   HorizontalOptions="Start">
+                           <Label Text="Teléfono: "/>
+                           <Label x:Name="txtTelefono" Text="0963000843"/>
+
+                       </StackLayout>
+                       <StackLayout Orientation="Horizontal"
+                                    HorizontalOptions="Start">
+                            <Label Text="Correo: "/>
+                            <Label x:Name="txtCorreo" Text="pedropica@gmail.cpm"/>
+                       </StackLayout>
+              </StackLayout>
+        </Frame>
+      
+
+        </StackLayout>
+          <StackLayout>
+              <StackLayout>
+            <Label Text="Seleccione la especialidad: "/>
+         
+
+        </StackLayout>
+        
+        <StackLayout>
+            <Label Text="Seleccione el especialista:"/>
+
+        </StackLayout>
+        <StackLayout>
+            <Label Text="Disponibilidad de horarios: "/>
+
+        </StackLayout>
+
+
+        </StackLayout>
+
+        <StackLayout HorizontalOptions="Center">
+                           <Label Text="?Esta de acuerdo con la cita medica?"/>
+                           <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                                <Button x:Name="btnAceptar"
+                                    Text="Aceptar"
+                                        CornerRadius="10"
+                                        Clicked="btnAceptar_Clicked_1"
+                                        Margin="10,10,10,10"
+                                        TextTransform="None"/>
+                                <Button x:Name="btnCancelar"
+                                    Text="Cancelar"
+                                        CornerRadius="10"
+                                        Margin="10,10,10,10"
+                                        Clicked="btnCancelar_Clicked"
+
+                                        TextTransform="None"/>
+                           </StackLayout>
+                           
+                     </StackLayout>
+
+        
+    </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
