@@ -16536,7 +16536,7 @@ namespace EcuMed.Droid
 			public const int fondoLogin = 2131165284;
 			
 			// aapt resource value: 0x7F07006C
-			public const int iconoLogin = 2131165292;
+			public const int iconologin = 2131165292;
 			
 			// aapt resource value: 0x7F070065
 			public const int ic_arrow_down_24dp = 2131165285;
@@ -16659,16 +16659,31 @@ namespace EcuMed.Droid
 			public const int notify_panel_notification_icon_bg = 2131165325;
 			
 			// aapt resource value: 0x7F07008E
-			public const int preference_list_divider_material = 2131165326;
+			public const int pncom = 2131165326;
 			
 			// aapt resource value: 0x7F07008F
-			public const int test_custom_background = 2131165327;
+			public const int pngegg = 2131165327;
 			
 			// aapt resource value: 0x7F070090
-			public const int tooltip_frame_dark = 2131165328;
+			public const int preference_list_divider_material = 2131165328;
 			
 			// aapt resource value: 0x7F070091
-			public const int tooltip_frame_light = 2131165329;
+			public const int rececom = 2131165329;
+			
+			// aapt resource value: 0x7F070092
+			public const int test_custom_background = 2131165330;
+			
+			// aapt resource value: 0x7F070093
+			public const int tooltip_frame_dark = 2131165331;
+			
+			// aapt resource value: 0x7F070094
+			public const int tooltip_frame_light = 2131165332;
+			
+			// aapt resource value: 0x7F070095
+			public const int Unknown = 2131165333;
+			
+			// aapt resource value: 0x7F070096
+			public const int vercitaico = 2131165334;
 			
 			static Drawable()
 			{

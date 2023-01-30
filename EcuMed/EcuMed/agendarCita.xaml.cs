@@ -7,11 +7,12 @@ namespace EcuMed
 {	
 	public partial class agendarCita : ContentPage
 	{	
-		public agendarCita (string usuario)
+		public agendarCita ()
 		{
 			InitializeComponent ();
-            lblUsuarioc.Text = "Bienvenido " + usuario;
-            lblUsuario.Text = "Nombre: " + usuario;
+
+          //  lblUsuarioc.Text = "Bienvenido " + nombre;
+            //lblUsuario.Text = "Nombre: " + usuario;
         }
 
         void btnAceptar_Clicked_1(System.Object sender, System.EventArgs e)

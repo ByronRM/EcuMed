@@ -8,7 +8,6 @@ using System.IO;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-
 namespace EcuMed
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -23,11 +22,11 @@ namespace EcuMed
         }
         public static IEnumerable<Usuario> Select_Where(SQLiteConnection db, string nombreUsuario, string contraseña)
         {
-            return db.Query<Usuario>("SELECT * FROM Estudiante where usuario=? and Contraseña=?", nombreUsuario, contraseña);
+            return db.Query<Usuario>("SELECT * FROM Usuario where nombreUsuario=? and Contrasena=?", nombreUsuario, contraseña);
         }
 
 
-
+           
         public void btnIniciar_Clicked_1(System.Object sender, System.EventArgs e)
         {
          /*   string usuario = "Byron";
@@ -55,7 +54,8 @@ namespace EcuMed
                 IEnumerable<Usuario> resultado = Select_Where(db, txtUsuario.Text, txtContraseña.Text);
                 if (resultado.Count() > 0)
                 {
-                    Navigation.PushAsync(new Principal(nombreUsuario));
+                  
+                    Navigation.PushAsync(new Principal());
                 }
                 else
                 {
@@ -70,7 +70,7 @@ namespace EcuMed
 
         void btnRegistrar_Clicked(System.Object sender, System.EventArgs e)
         {
-            Navigation.PushAsync(new registroUsuario());    
+            Navigation.PushAsync(new registroUsuario( ));    
         }
 
 

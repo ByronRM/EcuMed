@@ -2,11 +2,11 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="EcuMed.Login">
+    x:Class="EcuMed.Login" NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         
-        <Grid>
-           
+      
+           <Grid>
           <Image Source="fondoLogin.jpeg" Aspect="AspectFill"></Image>
             <BoxView Color="Gray" Opacity="0.8"></BoxView>
             <Grid>
@@ -15,22 +15,22 @@
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="Auto"></RowDefinition>
                 </Grid.RowDefinitions>
-                    <Image Source="iconoLogin.jpg"></Image>
-
-                    <StackLayout Grid.Row="1" Padding="30,20">
+             <Image Source="https://c0.klipartz.com/pngpicture/321/90/gratis-png-usuario-iconos-de-computadora-formato-de-icono-de-manzana-icono-de-persona-de-negocios-humano-hombre-hombre-personas.png"  > </Image>
+                    <StackLayout Grid.Row="1" Padding="50,20">
                     <Entry x:Name="txtUsuario" Placeholder="Usuario" PlaceholderColor="White"></Entry>
                     <Entry x:Name="txtContraseña" Placeholder="Contrseña" PlaceholderColor="White" IsPassword="True"></Entry>
-                    <Button x:Name="btnIniciar" Text="Iniciar Sesion" Clicked="btnIniciar_Clicked_1"  TextColor="Gray" BorderRadius="50"  ></Button>
+                    <Button x:Name="btnIniciar" Text="Iniciar Sesion" Margin="45,2" Clicked="btnIniciar_Clicked_1"  TextColor="Gray" BorderRadius="50"  ></Button>
+                    <Button x:Name="btnRegistrar" Text="Registrar" Margin="45,2" TextColor="Gray" BorderRadius="50" Clicked="btnRegistrar_Clicked" ></Button>
                      <StackLayout Orientation="Horizontal" >
                     <Label Text="Recuperar Contraseña, " TextColor="White"></Label>
-                    <Label Text="Registrarse" HorizontalOptions="End" TextColor="White"></Label>
+                    <Label x:Name="txtRegistro"  Text="Registrarse" HorizontalOptions="End" TextColor="White"></Label>
                 </StackLayout>
                 </StackLayout>
                
             </Grid>
-       </Grid>
-             
+      </Grid>
            
     </ContentPage.Content>
 </ContentPage>
+
 

@@ -2,10 +2,9 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="EcuMed.registroUsuario">
+    x:Class="EcuMed.Elemento">
     <ContentPage.Content>
-       
-        <StackLayout >
+               <StackLayout >
             <Frame>
                 <StackLayout>
             <Label Text="Registro de Usuario" FontSize="18" HorizontalOptions="Center" > </Label>
@@ -45,19 +44,19 @@
             <Entry x:Name="txtApellido" Placeholder="Ingrese el Apellido" Grid.Row="2" Grid.Column="1"  > </Entry>
 
             <Label Text="Edad" FontSize="18" Grid.Row="3" Grid.Column="0" ></Label>
-            <Entry Keyboard="Numeric" x:Name="txtEdad" Placeholder="Ingrese la Edad" Grid.Row="3" Grid.Column="1"  > </Entry>
+            <Entry  x:Name="txtEdad" Placeholder="Ingrese la Edad" Grid.Row="3" Grid.Column="1"  > </Entry>
 
              <Label Text="Telefono" FontSize="18" Grid.Row="5" Grid.Column="0" ></Label>
-            <Entry Keyboard="Telephone" x:Name="txtTelefono" Placeholder="Ingrese el Telefono" Grid.Row="5" Grid.Column="1"  > </Entry>
+            <Entry  x:Name="txtTelefono" Placeholder="Ingrese el Telefono" Grid.Row="5" Grid.Column="1"  > </Entry>
 
             <Label Text="Correo" FontSize="18" Grid.Row="6" Grid.Column="0" ></Label>
-            <Entry Keyboard="Email" x:Name="txtCorreo" Placeholder="Ingrese el Correo" Grid.Row="6" Grid.Column="1"  > </Entry>
+            <Entry x:Name="txtCorreo" Placeholder="Ingrese el Correo" Grid.Row="6" Grid.Column="1"  > </Entry>
 
             <Label Text="Direccion" FontSize="18" Grid.Row="7" Grid.Column="0" ></Label>
             <Entry x:Name="txtDireccion" Placeholder="Ingrese la Direccion" Grid.Row="7" Grid.Column="1"  > </Entry>
 
             <Label Text="Estado" FontSize="18" Grid.Row="8" Grid.Column="0" ></Label>
-            <Entry Keyboard="Numeric" x:Name="txtEstado" Placeholder="Ingrese el Estado" Grid.Row="8" Grid.Column="1"  > </Entry>
+            <Entry  x:Name="txtEstado" Placeholder="Ingrese el Estado" Grid.Row="8" Grid.Column="1"  > </Entry>
 
             <Label Text="Fecha Ingreso" FontSize="18" Grid.Row="9" Grid.Column="0" ></Label>
             <Entry x:Name="txtFecIngreso" Placeholder="Ingrese la Fecha " Grid.Row="9" Grid.Column="1"  > </Entry>
@@ -71,8 +70,8 @@
         </Grid>
         
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-        <Button x:Name="btnRegistrar" Text="Regrsitrar" TextColor="Gray" BorderRadius="50" Clicked="btnRegistrar_Clicked"></Button>
-         <Button x:Name="btnCancelar" Text="Cancelar" TextColor="Gray" BorderRadius="50" Clicked="btnCancelar_Clicked" ></Button>
+        <Button x:Name="btnActualizar" Text="Actualizar" TextColor="Gray" BorderRadius="50" Clicked="btnActualizar_Clicked"></Button>
+         <Button x:Name="btnEliminar" Text="Eliminar" TextColor="Gray" BorderRadius="50" Clicked="btnEliminar_Clicked" ></Button>
       </StackLayout>
         </StackLayout>
     </Frame>
@@ -80,8 +79,6 @@
 
 
         </StackLayout>
-
-
     </ContentPage.Content>
 </ContentPage>
 

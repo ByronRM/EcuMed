@@ -4,10 +4,55 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="EcuMed.Principal">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Usuario"></Label>
-            <Label x:Name="txtUsuario"></Label>
+       <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Salud S.A" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Atencin en menos de 24 horas  " FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Mejoramos el canal de comunicacion para brindar una atencion con mayor rapidez" FontSize="16" Padding="30,0,30,0"/>
+        <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Learn more at "/>
+                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+         <StackLayout>
+            <Label Text="hola mundo"/>
+            <StackLayout>
+
+                <Grid>
+     <Grid.RowDefinitions>
+         <RowDefinition Height="*" />
+         <RowDefinition Height= '30' />
+        <RowDefinition Height="*" />
+         <RowDefinition Height='30' />
+     </Grid.RowDefinitions>
+
+     <Grid.ColumnDefinitions>
+         <ColumnDefinition Width="*" />
+         <ColumnDefinition  Width="*" />
+     </Grid.ColumnDefinitions>
+
+     <ImageButton  x:Name="ibtnAgendarCita" Clicked="ibtnAgendarCita_Clicked" CornerRadius="40"  BackgroundColor="#f7d794" Grid.Row="0" Grid.Column="0"  Source="pngegg.png"  HeightRequest="150" WidthRequest="150"/>  
+     <ImageButton  x:Name="ibtnUsuario" Clicked="ibtnUsuario_Clicked" CornerRadius="40" BackgroundColor="#778beb" Grid.Row="0" Grid.Column="1"  Source="pncom.png" HeightRequest="100" WidthRequest="150"/> 
+    <Label Text="Agendar Citas" Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center"/>
+      <Label Text="Usuarios" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center"/>
+     <ImageButton x:Name="ibtnHistaMedica" Clicked="ibtnHistaMedica_Clicked" CornerRadius="40" BackgroundColor="#D6A2E8" Grid.Row="2" Grid.Column="0"  Source="rececom.png" HeightRequest="150" WidthRequest="150"/>
+    <ImageButton x:Name="ibtnVerCita" Clicked="ibtnVerCita_Clicked" CornerRadius="40" BackgroundColor="#b8e994" Grid.Row="2" Grid.Column="1" Source="vercitaico.png" HeightRequest="150" WidthRequest="150"/>
+      <Label Text="Hitorial medico" Grid.Row="3" Grid.Column="0" HorizontalTextAlignment="Center"/>
+      <Label Text="Ver cita" Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="Center"/>
+     
+   </Grid>
+   
+            </StackLayout>
+
         </StackLayout>
+        <Button Text="salir"/>
+    </StackLayout>
     </ContentPage.Content>
 </ContentPage>
 
