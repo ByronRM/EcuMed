@@ -11,6 +11,14 @@ namespace EcuMed
         {
             InitializeComponent();
         }
+
+        void btnRegistrar_Clicked(System.Object sender, System.EventArgs e)
+        {
+        }
+
+        void btnCancelar_Clicked(System.Object sender, System.EventArgs e)
+        {
+        }
     }
 }
 

@@ -4,10 +4,87 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="EcuMed.registroUsuario">
     <ContentPage.Content>
+       
         <StackLayout >
-            <Label Text=""> </Label>
+            <Frame>
+                <StackLayout>
+            <Label Text="Registro de Usuario" FontSize="18" HorizontalOptions="Center" > </Label>
+            <Label Text="Ingrese Sus Datos" FontSize="16"></Label>
+                    </StackLayout>
+                 </Frame>
+           
+        <StackLayout>
+<Frame  >
+    <StackLayout >
+        <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Text="Cesula" FontSize="18" Grid.Row="0" Grid.Column="0" ></Label>
+            <Entry x:Name="txtCedula" Placeholder="Ingrese el nombre" Grid.Row="0" Grid.Column="1"  > </Entry>
+
+            <Label Text="Nombre" FontSize="18" Grid.Row="1" Grid.Column="0" ></Label>
+            <Entry x:Name="txtNombre" Placeholder="Ingrese el nombre" Grid.Row="1" Grid.Column="1"  > </Entry>
+
+             <Label Text="Apellido" FontSize="18" Grid.Row="2" Grid.Column="0" ></Label>
+            <Entry x:Name="txtApellido" Placeholder="Ingrese el Apellido" Grid.Row="2" Grid.Column="1"  > </Entry>
+
+            <Label Text="Edad" FontSize="18" Grid.Row="3" Grid.Column="0" ></Label>
+            <Entry x:Name="txtEdad" Placeholder="Ingrese la Edad" Grid.Row="3" Grid.Column="1"  > </Entry>
+
+             <Label Text="Sexo" FontSize="18" Grid.Row="4" Grid.Column="0" ></Label>
+            <Entry x:Name="txtSexo" Placeholder="Ingrese el Sexo" Grid.Row="4" Grid.Column="1"  > </Entry>
+
+             <Label Text="Telefono" FontSize="18" Grid.Row="5" Grid.Column="0" ></Label>
+            <Entry x:Name="txtTelefono" Placeholder="Ingrese el Telefono" Grid.Row="5" Grid.Column="1"  > </Entry>
+
+            <Label Text="Correo" FontSize="18" Grid.Row="6" Grid.Column="0" ></Label>
+            <Entry x:Name="txtCorreo" Placeholder="Ingrese el Correo" Grid.Row="6" Grid.Column="1"  > </Entry>
+
+            <Label Text="Direccion" FontSize="18" Grid.Row="7" Grid.Column="0" ></Label>
+            <Entry x:Name="txtDireccion" Placeholder="Ingrese la Direccion" Grid.Row="7" Grid.Column="1"  > </Entry>
+
+            <Label Text="Estado" FontSize="18" Grid.Row="8" Grid.Column="0" ></Label>
+            <Entry x:Name="txtEstado" Placeholder="Ingrese el Estado" Grid.Row="8" Grid.Column="1"  > </Entry>
+
+            <Label Text="Fecha Ingreso" FontSize="18" Grid.Row="9" Grid.Column="0" ></Label>
+            <Entry x:Name="txtFecIngreso" Placeholder="Ingrese la Fecha " Grid.Row="9" Grid.Column="1"  > </Entry>
+
+            <Label Text="Nombre de Usuario" FontSize="18" Grid.Row="10" Grid.Column="0" ></Label>
+            <Entry x:Name="txtUserName" Placeholder="Ingrese el usuario" Grid.Row="10" Grid.Column="1"  > </Entry>
+
+            <Label Text="Contraseña" FontSize="18" Grid.Row="11" Grid.Column="0" ></Label>
+            <Entry x:Name="txtContraseña" Placeholder="Ingrese la Contraseña " Grid.Row="11" Grid.Column="1"  > </Entry>
+
+        </Grid>
+        
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+        <Button x:Name="btnRegistrar" Text="Regrsitrar" TextColor="Gray" BorderRadius="50" Clicked="btnRegistrar_Clicked"></Button>
+         <Button x:Name="btnCancelar" Text="Cancelar" TextColor="Gray" BorderRadius="50" Clicked="btnCancelar_Clicked" ></Button>
+      </StackLayout>
+        </StackLayout>
+    </Frame>
+        </StackLayout>
+
 
         </StackLayout>
+
+
     </ContentPage.Content>
 </ContentPage>
 
